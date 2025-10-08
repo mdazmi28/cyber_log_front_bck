@@ -234,7 +234,7 @@ const WorldMap = ({
                       stroke: "rgba(255, 255, 255, 0.2)",
                       strokeWidth: 0.5,
                       outline: "none",
-                      cursor: "pointer",
+                      cursor: "default",
                       transition: "all 0.3s ease",
                     },
                     hover: {
@@ -242,18 +242,16 @@ const WorldMap = ({
                       stroke: "rgba(255, 255, 255, 0.5)",
                       strokeWidth: 1,
                       outline: "none",
-                      cursor: "pointer",
+                      cursor: "default",
                       filter: "drop-shadow(0 0 8px rgba(255, 255, 255, 0.6))",
                     },
                     pressed: {
-                      fill: "#00ff88",
-                      stroke: "rgba(0, 255, 136, 0.8)",
-                      strokeWidth: 1.5,
+                      fill: getCountryColor(geo),
+                      stroke: "rgba(255, 255, 255, 0.2)",
+                      strokeWidth: 0.5,
                       outline: "none",
-                      filter: "drop-shadow(0 0 12px rgba(0, 255, 136, 0.8))",
                     },
                   }}
-                  onClick={(event) => onCountryClick(geo, event)}
                   onMouseEnter={(event) => onCountryHover(geo, event)}
                   onMouseLeave={onMouseLeave}
                 />
