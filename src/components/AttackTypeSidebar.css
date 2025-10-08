@@ -1,0 +1,278 @@
+/* Attack Type Sidebar Styles */
+.attack-type-sidebar {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 260px;
+  max-height: 380px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Header Styles */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.sidebar-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #00d4ff;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-header-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Quick Stats Styles */
+.quick-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.stat-card {
+  border-radius: 5px;
+  padding: 6px;
+  text-align: center;
+}
+
+.stat-card-types {
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.stat-card-active {
+  background: rgba(255, 165, 2, 0.1);
+  border: 1px solid rgba(255, 165, 2, 0.3);
+}
+
+.stat-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.stat-card-active .stat-number {
+  color: #ffa502;
+}
+
+.stat-label {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Section Styles */
+.section-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* Attack Distribution Styles */
+.attack-distribution-section {
+  margin-bottom: 10px;
+}
+
+.attack-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 3px;
+}
+
+.attack-type-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 9px;
+}
+
+.attack-type-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.attack-type-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.attack-type-icon {
+  font-size: 10px;
+}
+
+.attack-type-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 9px;
+}
+
+.country-count-badge {
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.attack-count {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9px;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  height: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Countries List Styles */
+.countries-list {
+  margin-top: 3px;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.country-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-size: 7px;
+}
+
+.country-count-more {
+  background: rgba(0, 212, 255, 0.2);
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-size: 7px;
+  color: #00d4ff;
+}
+
+/* Selected Country Section Styles */
+.selected-country-section {
+  border-top: 1px solid rgba(0, 212, 255, 0.2);
+  padding-top: 6px;
+}
+
+.selected-country-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 9px;
+}
+
+.selected-attack-icon {
+  font-size: 12px;
+}
+
+.selected-country-info {
+  flex: 1;
+}
+
+.selected-attack-name {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 9px;
+}
+
+.selected-attack-details {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.severity-badge {
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 7px;
+  font-weight: bold;
+}
+
+.attack-count-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8px;
+}
+
+/* Custom Scrollbar Styles */
+.attack-distribution::-webkit-scrollbar {
+  width: 3px;
+}
+
+.attack-distribution::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.attack-distribution::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.6);
+  border-radius: 2px;
+}
+
+.attack-distribution::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.8);
+}
+
+/* Animation Keyframes */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attack-type-sidebar {
+    width: 240px;
+    right: 10px;
+    top: 30px;
+  }
+  
+  .quick-stats {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
