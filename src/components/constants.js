@@ -24,14 +24,14 @@ export const cyberAttackMarkers = [
     severity: "Critical",
     attacks: "2,891",
   },
-  // {
-  //   markerOffset: -15,
-  //   country: "Russia",
-  //   coordinates: [105.3188, 61.524],
-  //   attackType: "Phishing",
-  //   severity: "Medium",
-  //   attacks: "756",
-  // },
+  {
+    markerOffset: -15,
+    country: "Russia",
+    coordinates: [105.3188, 61.524],
+    attackType: "Phishing",
+    severity: "Medium",
+    attacks: "756",
+  },
   {
     markerOffset: -15,
     country: "Germany",
@@ -140,7 +140,7 @@ export const ipAnalyticsData = {
   ipConnections: [
     { sourceIP: "192.168.1.100", destIP: "203.0.113.1", sourceCountry: "United States", attacks: 1247, severity: "High" },
     { sourceIP: "10.0.0.45", destIP: "203.0.113.1", sourceCountry: "China", attacks: 1089, severity: "Critical" },
-    // { sourceIP: "172.16.0.23", destIP: "198.51.100.45", sourceCountry: "Russia", attacks: 892, severity: "High" },
+    { sourceIP: "172.16.0.23", destIP: "198.51.100.45", sourceCountry: "Russia", attacks: 892, severity: "High" },
     { sourceIP: "192.168.2.156", destIP: "203.0.113.78", sourceCountry: "Germany", attacks: 756, severity: "Medium" },
     { sourceIP: "10.1.1.78", destIP: "198.51.100.123", sourceCountry: "United Kingdom", attacks: 623, severity: "Critical" },
     { sourceIP: "172.20.0.12", destIP: "198.51.100.67", sourceCountry: "India", attacks: 589, severity: "High" },
@@ -158,7 +158,7 @@ export const ipAnalyticsData = {
   topSourceIPs: [
     { ip: "192.168.1.100", country: "United States", attacks: 1247, severity: "High" },
     { ip: "10.0.0.45", country: "China", attacks: 1089, severity: "Critical" },
-    // { ip: "172.16.0.23", country: "Russia", attacks: 892, severity: "High" },
+    { ip: "172.16.0.23", country: "Russia", attacks: 892, severity: "High" },
     { ip: "192.168.2.156", country: "Germany", attacks: 756, severity: "Medium" },
     { ip: "10.1.1.78", country: "United Kingdom", attacks: 623, severity: "Critical" },
     { ip: "172.20.0.12", country: "India", attacks: 589, severity: "High" },
@@ -182,7 +182,7 @@ export const ipAnalyticsData = {
   topSourceCountries: [
     { country: "China", attacks: 2891, severity: "Critical", percentage: 23.4 },
     { country: "United States", attacks: 1247, severity: "High", percentage: 10.1 },
-    // { country: "Russia", attacks: 1089, severity: "High", percentage: 8.8 },
+    { country: "Russia", attacks: 1089, severity: "High", percentage: 8.8 },
     { country: "India", attacks: 892, severity: "High", percentage: 7.2 },
     { country: "Germany", attacks: 756, severity: "Medium", percentage: 6.1 },
     { country: "United Kingdom", attacks: 623, severity: "Critical", percentage: 5.0 },
