@@ -1,7 +1,6 @@
 // Cyber attack markers data
 export const cyberAttackMarkers = [
   {
-    markerOffset: -15,
     country: "Bangladesh", // TARGET COUNTRY
     coordinates: [90.3563, 23.685], // Bangladesh coordinates
     attackType: "Target",
@@ -9,7 +8,6 @@ export const cyberAttackMarkers = [
     attacks: "Protected",
   },
   {
-    markerOffset: -15,
     country: "United States",
     coordinates: [-95.7129, 37.0902],
     attackType: "DDoS",
@@ -17,7 +15,6 @@ export const cyberAttackMarkers = [
     attacks: "1,247",
   },
   {
-    markerOffset: -15,
     country: "China",
     coordinates: [104.1954, 35.8617],
     attackType: "Malware",
@@ -25,7 +22,6 @@ export const cyberAttackMarkers = [
     attacks: "2,891",
   },
   {
-    markerOffset: -15,
     country: "Russia",
     coordinates: [105.3188, 61.524],
     attackType: "Phishing",
@@ -33,7 +29,6 @@ export const cyberAttackMarkers = [
     attacks: "756",
   },
   {
-    markerOffset: -15,
     country: "Germany",
     coordinates: [10.4515, 51.1657],
     attackType: "Ransomware",
@@ -41,7 +36,6 @@ export const cyberAttackMarkers = [
     attacks: "432",
   },
   {
-    markerOffset: 25,
     country: "Brazil",
     coordinates: [-51.9253, -14.235],
     attackType: "Botnet",
@@ -49,7 +43,6 @@ export const cyberAttackMarkers = [
     attacks: "389",
   },
   {
-    markerOffset: -15,
     country: "United Kingdom",
     coordinates: [-3.436, 55.3781],
     attackType: "Data Breach",
@@ -57,7 +50,6 @@ export const cyberAttackMarkers = [
     attacks: "623",
   },
   {
-    markerOffset: -15,
     country: "India",
     coordinates: [78.9629, 20.5937],
     attackType: "SQL Injection",
@@ -65,7 +57,6 @@ export const cyberAttackMarkers = [
     attacks: "1,124",
   },
   {
-    markerOffset: 25,
     country: "Australia",
     coordinates: [133.7751, -25.2744],
     attackType: "APT",
@@ -73,7 +64,6 @@ export const cyberAttackMarkers = [
     attacks: "234",
   },
   {
-    markerOffset: -15,
     country: "Japan",
     coordinates: [138.2529, 36.2048],
     attackType: "Zero-day",
@@ -81,7 +71,6 @@ export const cyberAttackMarkers = [
     attacks: "567",
   },
   {
-    markerOffset: -15,
     country: "France",
     coordinates: [2.2137, 46.6034],
     attackType: "Cryptojacking",
@@ -168,17 +157,18 @@ export const ipAnalyticsData = {
     { ip: "192.168.4.123", country: "France", attacks: 312, severity: "Low" }
   ],
   topDestinationIPs: [
-    { ip: "203.0.113.1", country: "Bangladesh", attacks: 2156, severity: "Target" },
-    { ip: "198.51.100.45", country: "United States", attacks: 1892, severity: "High" },
-    { ip: "203.0.113.78", country: "Germany", attacks: 1456, severity: "Critical" },
-    { ip: "198.51.100.123", country: "United Kingdom", attacks: 1234, severity: "High" },
-    { ip: "203.0.113.234", country: "Japan", attacks: 1089, severity: "Medium" },
-    { ip: "198.51.100.67", country: "India", attacks: 967, severity: "High" },
-    { ip: "203.0.113.89", country: "Australia", attacks: 834, severity: "Medium" },
-    { ip: "198.51.100.156", country: "Brazil", attacks: 723, severity: "Low" },
-    { ip: "203.0.113.45", country: "France", attacks: 645, severity: "Medium" },
-    { ip: "198.51.100.89", country: "Canada", attacks: 567, severity: "Low" }
+    { ip: "203.0.113.1", country: "Bangladesh", attacks: 2156, severity: "High" },
+    { ip: "198.51.100.45", country: "Bangladesh", attacks: 1892, severity: "High" },
+    { ip: "203.0.113.78", country: "Bangladesh", attacks: 1456, severity: "Critical" },
+    { ip: "198.51.100.123", country: "Bangladesh", attacks: 1234, severity: "High" },
+    { ip: "203.0.113.234", country: "Bangladesh", attacks: 1089, severity: "Medium" },
+    { ip: "198.51.100.67", country: "Bangladesh", attacks: 967, severity: "High" },
+    { ip: "203.0.113.89", country: "Bangladesh", attacks: 834, severity: "Medium" },
+    { ip: "198.51.100.156", country: "Bangladesh", attacks: 723, severity: "Low" },
+    { ip: "203.0.113.45", country: "Bangladesh", attacks: 645, severity: "Medium" },
+    { ip: "198.51.100.89", country: "Bangladesh", attacks: 567, severity: "Low" }
   ],
+
   topSourceCountries: [
     { country: "China", attacks: 2891, severity: "Critical", percentage: 23.4 },
     { country: "United States", attacks: 1247, severity: "High", percentage: 10.1 },
@@ -202,11 +192,11 @@ export const getSeverityColor = (severity) => {
     case "target":
       return "#00FF00";
     case "critical":
-      return "#80001aff";
+      return "#DC143C";
     case "high":
-      return "#ff2600ff";
+      return "#FF6347";
     case "medium":
-      return "#ffff00ff";
+      return "#FFA500";
     case "low":
       return "#FFD700";
     default:
